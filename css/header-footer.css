@@ -1,7 +1,11 @@
 /* header */
 header{
-    
+    position:fixed;
+    z-index:10000;
+    width:100%;
     box-shadow: 0 0 8px rgba(0,0,0,0.15);
+    top:0;
+    background: rgba(255,255,255,0.8);
 }
 header .inner{
     display:flex;
@@ -98,11 +102,45 @@ header .inner{
 }
 
 /* footer */
+footer{
+    padding-top: 7rem;
+}
+
+.top>btn{
+    position:absolute;
+    right:0;
+    top:-70px;
+}
+.top-btn>a{
+    display:block;
+    width:5rem;
+    height:5rem;
+    border-radius: 5rem;
+    background-color: rgba(255,38,38,0.5[]);
+    color:#fff;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+.top>btn>a::before{
+   content:"";
+   display:block;
+   width:20px;
+   height: 20px;
+   background: url(../images/icon-arrow-45deg.svg);
+   background-size: 100%;
+   transform: rotate(-45deg);
+
+
+    
+}
+
 
 footer .inner{
     max-width:1700px;
     background-color: #636363;
-    border-radius: var(--large-radius)0 0;
+    border-radius: var(--large-radius) var(--large-radius) 0 0;
     padding:50px 110px;
     display: flex;
     justify-content: space-between;
